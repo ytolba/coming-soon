@@ -1,5 +1,7 @@
 # Coming Soon Template
 
+View the live demo at [coming-soon.pixellab.nz](https://coming-soon.pixellab.nz).
+
 ## Features
 
 - Tailwind CSS
@@ -28,3 +30,5 @@ Open the URL shown in the terminal to view the site.
 You can deploy this template to Netlify by clicking the button below.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/elilambnz/coming-soon)
+
+To use the Netlify form, you will need to [Enable form detection](https://docs.netlify.com/forms/setup/#enable-form-detection) in your Netlify site settings. The form will be available on the next deploy after enabling form detection.
