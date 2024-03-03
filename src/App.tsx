@@ -11,7 +11,7 @@ export default function App() {
   const encode = (data: { [key: string]: string }) => {
     return Object.keys(data)
       .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]),
       )
       .join("&");
   };
@@ -60,14 +60,14 @@ export default function App() {
                 Coming Soon
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
-                We're building a new way for businesses to connect with their
-                customers. Sign up to get notified when we're ready to launch.
+                We're working on something new and exciting. We can't wait to
+                share it with you. It's going to blow your mind!
               </p>
             </div>
           </div>
         </div>
 
-        <div className="mt-20 py-16 sm:py-24">
+        <div className="py-24 sm:py-32">
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             {signedUp ? (
               <div className="rounded-md bg-green-50 p-4">
@@ -91,11 +91,10 @@ export default function App() {
             ) : (
               <div className="relative isolate overflow-hidden bg-neutral-800 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
                 <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  Get notified when we're launching.
+                  Stay in the loop
                 </h2>
                 <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-                  We'll let you know when we're ready to launch. No spam, we
-                  promise.
+                  Sign up to get notified when we're ready to launch.
                 </p>
                 <form
                   onSubmit={handleSubmit}
@@ -121,33 +120,24 @@ export default function App() {
                   >
                     Notify me
                   </button>
-                </form>
-                <svg
-                  viewBox="0 0 1024 1024"
-                  className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
-                  aria-hidden="true"
-                >
-                  <circle
-                    cx={512}
-                    cy={512}
-                    r={512}
-                    fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-                    fillOpacity="0.7"
-                  />
-                  <defs>
-                    <radialGradient
-                      id="759c1415-0410-454c-8f7c-9a820de03641"
-                      cx={0}
-                      cy={0}
-                      r={1}
-                      gradientUnits="userSpaceOnUse"
-                      gradientTransform="translate(512 512) rotate(90) scale(512)"
+                  <svg
+                    className="pointer-events-none absolute right-0 h-48 w-48 -translate-y-3/4 select-none opacity-20 sm:h-96 sm:w-96 sm:-translate-y-1/2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <text
+                      x="50%"
+                      y="50%"
+                      fontSize="20"
+                      fill="currentColor"
+                      textAnchor="middle"
+                      alignmentBaseline="middle"
                     >
-                      <stop stopColor="#FAD03B" />
-                      <stop offset={1} stopColor="#CE5700" stopOpacity={0} />
-                    </radialGradient>
-                  </defs>
-                </svg>
+                      🚀
+                    </text>
+                  </svg>
+                </form>
               </div>
             )}
           </div>
