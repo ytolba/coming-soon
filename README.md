@@ -1,5 +1,7 @@
 # Coming Soon Template
 
+![template-coming-soon](https://github.com/elilambnz/coming-soon/assets/14214838/cbb9e4ee-b717-4345-ad7e-b45b539206c6)
+
 View the live demo at [coming-soon.pixellab.nz](https://coming-soon.pixellab.nz).
 
 ## Features
